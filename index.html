@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id" class="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f4f0" />
+    <meta
+      name="description"
+      content="Rak proyek Pidzzzz — kumpulan repositori GitHub yang dibangun dengan sentuhan manusiawi."
+    />
+    <title>Pidzzzz — Rak Proyek</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8F%B1%3C/text%3E%3C/svg%3E"
+    />
+    <script>
+      // Terapkan tema tersimpan SEBELUM paint supaya tidak ada kedipan.
+      try {
+        const saved = localStorage.getItem("portfolio-theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (saved === "dark" || (!saved && prefersDark)) {
+          document.documentElement.classList.add("dark");
+          document
+            .querySelector('meta[name="theme-color"]')
+            ?.setAttribute("content", "#15171c");
+        }
+      } catch (_) {
+        /* localStorage tidak tersedia — abaikan, tema default tetap aman */
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 3rem; font-family: system-ui; text-align: center">
+        Halaman ini butuh JavaScript untuk menampilkan rak proyeknya. Aktifkan
+        lalu muat ulang, ya.
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
