@@ -8,11 +8,13 @@ Dirancang dengan prinsip **human-centric & fluid design**: tata letak asimetris 
 bernapas, tipografi emosional, gerakan natural, warna hangat, dan mikro-copy yang ramah —
 bukan templat korporat.
 
-[![Build](https://img.shields.io/badge/build-passing-4d7c6f?style=flat-square&logo=vite)](#-fitur)
+[![Deploy](https://github.com/Pidzzzz/github-portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Pidzzzz/github-portfolio/actions/workflows/deploy.yml)
 [![React](https://img.shields.io/badge/React-19-61dafb?style=flat-square&logo=react&logoColor=white)](https://react.dev)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-ee4c9c?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 [![License](https://img.shields.io/badge/license-MIT-6d4bc9?style=flat-square)](LICENSE)
+
+**[🌐 Lihat Situs Live](https://pidzzzz.github.io/github-portfolio/)**
 
 [✨ Fitur](#-fitur) · [🚀 Menjalankan](#-menjalankan) · [📁 Struktur](#-struktur) · [📝 Catatan Teknis](#-catatan-teknis)
 
