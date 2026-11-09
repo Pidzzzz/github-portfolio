@@ -177,7 +177,7 @@ export default function Hero({ profile, repoCount, newestRepo }) {
             <div className="mt-6 grid grid-cols-3 gap-2 border-t border-line pt-5">
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="font-display text-[19px] font-semibold leading-none tracking-tight">
+                  <p className="font-display text-[16.5px] font-semibold leading-none tracking-tight sm:text-[19px]">
                     {stat.value}
                   </p>
                   <p className="mt-1.5 text-[11.5px] leading-tight text-ink-3">

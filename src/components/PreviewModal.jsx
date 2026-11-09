@@ -110,7 +110,7 @@ export default function PreviewModal({ repo, onClose }) {
         animate={{ opacity: 1, y: 0, scale: 1 }}
         exit={{ opacity: 0, y: 20, scale: 0.98 }}
         transition={{ type: "spring", stiffness: 260, damping: 28, mass: 0.9 }}
-        className="relative flex h-[min(88vh,860px)] w-[min(1100px,100%)] flex-col overflow-hidden border border-line bg-surface shadow-lift"
+        className="relative flex h-[min(92dvh,860px)] w-[min(1100px,100%)] flex-col overflow-hidden border border-line bg-surface shadow-lift"
         style={{ borderRadius: "28px 28px 12px 28px" }}
       >
         <PanelHeader
@@ -221,7 +221,7 @@ function LivePreview({ repo, frameState, attempt, onReload, onFrameReady }) {
     <div className="flex h-full flex-col gap-4">
       {/* Bilah alamat ala jendela browser */}
       <div className="flex items-center gap-3 rounded-full border border-line bg-surface-2 px-3 py-2">
-        <span className="flex shrink-0 gap-1.5" aria-hidden>
+        <span className="hidden shrink-0 gap-1.5 min-[420px]:flex" aria-hidden>
           <span className="h-2.5 w-2.5 rounded-full bg-clay/60" />
           <span className="h-2.5 w-2.5 rounded-full bg-[#e9c46a]/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-moss/70" />
@@ -250,7 +250,7 @@ function LivePreview({ repo, frameState, attempt, onReload, onFrameReady }) {
         </a>
       </div>
 
-      <div className="relative min-h-[380px] flex-1 overflow-hidden rounded-[20px_20px_8px_20px] border border-line bg-surface">
+      <div className="relative min-h-[300px] flex-1 overflow-hidden rounded-[20px_20px_8px_20px] border border-line bg-surface sm:min-h-[380px]">
         {frameState !== "ready" && (
           <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-surface px-6 text-center">
             <span className="skeleton h-8 w-8 rounded-full" />

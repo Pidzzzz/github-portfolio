@@ -141,7 +141,7 @@ export default function RepoCard({ repo, index, wide = false, onPreview }) {
             <button
               type="button"
               onClick={() => onPreview(repo)}
-              className="inline-flex items-center gap-1.5 rounded-full bg-ink px-3.5 py-2 text-[12.5px] font-semibold text-bg transition-all ease-human duration-300 hover:-translate-y-0.5 hover:shadow-soft"
+              className="inline-flex items-center gap-1.5 rounded-full bg-ink px-3.5 py-2.5 text-[12.5px] sm:py-2 font-semibold text-bg transition-all ease-human duration-300 hover:-translate-y-0.5 hover:shadow-soft"
             >
               <span
                 aria-hidden
@@ -158,7 +158,7 @@ export default function RepoCard({ repo, index, wide = false, onPreview }) {
               target="_blank"
               rel="noreferrer noopener"
               aria-label={`Buka ${repo.name} di GitHub`}
-              className="inline-flex items-center gap-1.5 rounded-full border border-line px-3.5 py-2 text-[12.5px] font-semibold text-ink-2 transition-all ease-human duration-300 hover:-translate-y-0.5 hover:border-ink-3/50 hover:text-ink"
+              className="inline-flex items-center gap-1.5 rounded-full border border-line px-3.5 py-2.5 text-[12.5px] sm:py-2 font-semibold text-ink-2 transition-all ease-human duration-300 hover:-translate-y-0.5 hover:border-ink-3/50 hover:text-ink"
             >
               Kode
               <IconExternal size={13} />

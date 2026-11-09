@@ -50,7 +50,7 @@ export default function Toolbar({
             onChange={(event) => onQueryChange(event.target.value)}
             placeholder="Cari nama, bahasa, atau topik…"
             autoComplete="off"
-            className="w-full rounded-full border border-line bg-surface py-3 pl-11 pr-11 text-[14.5px] text-ink placeholder:text-ink-3 shadow-soft transition-all ease-human duration-300 focus:border-clay/60 focus:shadow-[0_0_0_4px_color-mix(in_srgb,var(--c-clay)_15%,transparent)] focus:outline-none"
+            className="w-full rounded-full border border-line bg-surface py-3 pl-11 pr-11 text-[16px] sm:text-[14.5px] text-ink placeholder:text-ink-3 shadow-soft transition-all ease-human duration-300 focus:border-clay/60 focus:shadow-[0_0_0_4px_color-mix(in_srgb,var(--c-clay)_15%,transparent)] focus:outline-none"
           />
           {hasQuery && (
             <button
@@ -84,7 +84,7 @@ export default function Toolbar({
               whileTap={{ scale: 0.96 }}
               transition={{ type: "spring", stiffness: 380, damping: 32 }}
               className={[
-                "relative rounded-full border px-4 py-2 text-[13.5px] font-medium transition-all ease-human duration-300",
+                "relative rounded-full border px-4 py-2.5 text-[13.5px] font-medium transition-all ease-human duration-300 sm:py-2",
                 isActive
                   ? "border-transparent text-bg shadow-soft"
                   : "border-line bg-surface text-ink-2 hover:-translate-y-0.5 hover:border-ink-3/50 hover:text-ink",
